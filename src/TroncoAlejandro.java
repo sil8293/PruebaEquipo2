@@ -45,7 +45,7 @@ public class TroncoAlejandro extends GraphicsProgram{
 		
 		GRect brazoIzquierdo = new GRect (ANCHO_BRAZO, ALTO_BRAZO);
 		brazoIzquierdo.setFilled(true);
-		brazoIzquierdo.setFillColor(Color.gray);
+		brazoIzquierdo.setFillColor(Color.lightGray);
 		add(brazoIzquierdo, ANCHO_PANTALLA/2 + ANCHO_TORSO/2, ALTO_CABEZA);
 
 		
@@ -56,7 +56,7 @@ public class TroncoAlejandro extends GraphicsProgram{
 		
 		GRect brazoDerecho = new GRect (ANCHO_BRAZO, ALTO_BRAZO);
 		brazoDerecho.setFilled(true);
-		brazoDerecho.setFillColor(Color.gray);
+		brazoDerecho.setFillColor(Color.lightGray);
 		add(brazoDerecho, ANCHO_PANTALLA/2 - ANCHO_TORSO/2 - 50, ALTO_CABEZA);
 		
 		
