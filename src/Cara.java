@@ -4,7 +4,7 @@ import java.awt.Color;
 import acm.graphics.*;
 import acm.program.*;
 
-public class Cara extends acm.program.GraphicsProgram {
+public class Cara extends GCompound {
 	
 	private static final int ANCHO_CARA = 100;
 	private static final int ANCHO_BOCA = 30;
@@ -21,7 +21,6 @@ public class Cara extends acm.program.GraphicsProgram {
 	
 	
 	public void init(){
-		setSize(ANCHO_PANTALLA, ALTO_PANTALLA);
 	}
 		
 	
