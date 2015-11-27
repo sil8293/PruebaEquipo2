@@ -1,10 +1,11 @@
 import java.awt.Color;
 
+import acm.graphics.GCompound;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 
-public class Piernas extends GraphicsProgram {
+public class Piernas extends GCompound {
 
 	private static final int ALTO_PIERNA = 180;
 	private static final int ANCHO_PIERNA = 75;
@@ -20,23 +21,15 @@ public class Piernas extends GraphicsProgram {
 	 GRect zapato = new GRect(ANCHO_ZAPATO, ALTO_ZAPATO);
 	 GRect zapato2 = new GRect(ANCHO_ZAPATO, ALTO_ZAPATO);
 	 
-	 
-	public void init(){ 
-		
-		setSize(650,900);
-
-
-		
-	}
 	
 	public void run(){
 		
 		add(pierna, getWidth()/2, AJUSTE);
 		pierna.setFilled(true);
-		pierna.setFillColor(Color.BLUE);
+		pierna.setFillColor(Color.lightGray);
 		add(pierna2,getWidth()/2 + pierna.getWidth(), AJUSTE);
 		pierna2.setFilled(true);
-		pierna2.setFillColor(Color.BLUE);
+		pierna2.setFillColor(Color.lightGray);
 		add(zapato,getWidth()/2 + pierna.getWidth()/2 + ANCHO_PIERNA/2 + 1,ALTO_PIERNA + AJUSTE);
 		zapato.setFilled(true);
 		zapato.setFillColor(Color.BLACK);
